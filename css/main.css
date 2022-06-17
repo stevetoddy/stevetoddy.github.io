@@ -78,6 +78,9 @@ a {
   font-weight: bold;
   text-transform: uppercase;
 }
+.header-nav a:hover {
+  color: #ed6e2f;
+}
 
 .header-logo  {
 
@@ -112,6 +115,9 @@ a {
   padding: 0;
   text-align: center;
 }
+.social-list a:hover  {
+  color: #ed6e2f;
+}
 .social-list > li {
   display: inline-block;
   margin: 0 0.5em;
@@ -132,6 +138,9 @@ a {
   margin: 40px 1% 0;
   padding: 2%;
   width: 23%;
+}
+.bio-box a:hover  {
+  color: #ed6e2f;
 }
 .bio-box h3 {
   color: #fff;
