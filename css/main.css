@@ -47,6 +47,10 @@ a img {
 /* END RESET*/
 
 /* GLOBAL STYLES */
+html  {
+  box-shadow: 0 0 0 30px #000 inset;
+  padding: 0 30px;
+}
 body {
   font-family: Helvetica, Arial, sans-serif;
 }
@@ -69,12 +73,33 @@ h2 ~ p  {
 .header {
   background-color: #000;
   color: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 20;
+}
+.header-logo {
+  background-color: #000;
+  box-sizing: border-box;
+  display: block;
+  height: 10vh;
+  padding-top: 10px;
+  position: relative;
+  text-align: center;
+  width: 10vh;
+  margin-left: -30px;
+}
+.header-logo:hover,
+.header-logo:active {
+  background-color: #ed6e2f;
+}
+.header-logo img {
+  width: 4.3vh;
 }
 .header-nav {
   float: right;
   padding: 5.5vh 60px 0 0;
 }
-.header-nav > li  {
+.header-nav > li {
   display: inline-block;
   margin-left: 1em;
 }
@@ -84,10 +109,14 @@ h2 ~ p  {
 }
 .header-nav a {
   color: #fff;
-  text-decoration: none;
   font-size: 0.8rem;
   font-weight: bold;
+  text-decoration: none;
   text-transform: uppercase;
+}
+.header-nav a:hover,
+.header-nav a:active {
+  color: #ed6e2f;
 }
 .header-nav > li:first-child a {
   color: #ed6e2f;
@@ -95,26 +124,11 @@ h2 ~ p  {
 .header-nav > li:first-child a:hover {
   color: #fff;
 }
-.header-nav a:hover,
-.header-nav a:active {
-  color: #ed6e2f;
-}
-.header-logo  {
-  background-color: #000;
-  position: relative;
-  transform: translate(-50%, -50%);
-  left: 50%;
-  top: 50%;
-}
-.header-logo:hover,
-.header-logo:active  {
-  opacity: 0.5;
-}
-
 /* HERO STYLES */
 .full-hero {
   background-color: #c7dbfc;
-  height: 50vh;
+  height: 30vh;
+  position: relative;
 }
 .full-hero:hover  {
   color: #ed6e2f;
@@ -138,11 +152,14 @@ h2 ~ p  {
   vertical-align: middle;
   width: 2.5em;
 }
-.social-list {
+.social-list  {
   list-style: none;
-  padding: 0;
-  text-align: center;
+  text-align: left;
+  position: absolute;
+  bottom: 0px;
+  padding-bottom: 10px;
 }
+
 .social-list a:hover  {
   color: #ed6e2f;
   background-color: rgb(187, 243, 215);
@@ -158,6 +175,7 @@ h2 ~ p  {
   margin: auto;
   max-width: 960px;
   overflow: hidden;
+  position: relative;
 }
 .bio-box {
   border: 1px solid black;
