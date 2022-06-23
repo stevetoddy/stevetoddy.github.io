@@ -150,14 +150,16 @@ h2 ~ p  {
   display: inline-block;
   margin: 2em 1em 0;
 }
-/* .footer-nav > li:first-child a  {
-  color: #ed6e2f;
-}
-.footer-nav > li:first-child a:hover  {
-  color: #fff;
-} */
+
 .footer-nav a:hover,
 .footer-nav a:active {
+  color: #ed6e2f;
+}
+.footer-social li {
+  display: inline-block;
+  margin: 1.5em 1.5em;
+}
+.footer-social a:hover {
   color: #ed6e2f;
 }
 /* HERO STYLES */
