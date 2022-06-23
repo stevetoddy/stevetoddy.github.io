@@ -109,6 +109,8 @@ h2 ~ p  {
 }
 .header-nav a {
   color: #fff;
+}
+  .nav-links a {
   font-size: 0.8rem;
   font-weight: bold;
   text-decoration: none;
@@ -123,6 +125,40 @@ h2 ~ p  {
 }
 .header-nav > li:first-child a:hover {
   color: #fff;
+}
+/* FOOTER STYLES */
+.footer {
+  background-color: #000;
+  padding: 8vh 0 10vh;
+  text-align: center;
+}
+.footer img {
+  width: 50px;
+}
+.footer h3  {
+  color: #fff;
+  padding-top: 1.5em;
+  text-transform: uppercase;
+}
+.footer h3 span {
+  color: #ed6e2f;
+}
+.footer-nav a {
+  color: #fff;
+}
+.footer-nav li {
+  display: inline-block;
+  margin: 2em 1em 0;
+}
+/* .footer-nav > li:first-child a  {
+  color: #ed6e2f;
+}
+.footer-nav > li:first-child a:hover  {
+  color: #fff;
+} */
+.footer-nav a:hover,
+.footer-nav a:active {
+  color: #ed6e2f;
 }
 /* HERO STYLES */
 .full-hero {
