@@ -165,12 +165,34 @@ h2 ~ p  {
 /* HERO STYLES */
 .full-hero {
   background-color: #c7dbfc;
-  height: 30vh;
-  position: relative;
+  height: 100vh;
+  box-sizing: border-box;
+  padding-top: 10vh;
+  background-size: cover;
 }
-.full-hero:hover  {
-  color: #ed6e2f;
-  background-color: aqua;
+.hero-home  {
+  background-image: url(/images/shark.jpg);
+  background-position: center top;
+}
+.hero-content {
+  color: #fff;
+  position: relative;
+  top: 50%;
+  text-align: center;
+  transform: translate(0, -10%);
+  text-transform: uppercase;
+}
+.hero-content h1  {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 7vw;
+}
+.hero-content .social-link  {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #556c83;
+}
+.hero-content .social-link:hover  {
+  background-color: #000;
+  color: #fff;
 }
 /* SOCIAL STYLES */
 .social-link {
@@ -198,10 +220,10 @@ h2 ~ p  {
   padding-bottom: 10px;
 }
 
-.social-list a:hover  {
+/* .social-list a:hover  {
   color: #ed6e2f;
   background-color: rgb(187, 243, 215);
-}
+} */
 .social-list > li {
   display: inline-block;
   margin: 0 0.5em;
@@ -246,4 +268,14 @@ h2 ~ p  {
 }
 .bio-copy a {
   color: green;
+}
+
+
+/* PAGE 2 STYLES */
+.page2-h1 {
+  position: relative;
+  box-sizing: border-box;
+  padding: 100px;
+  color: #f00;
+
 }
