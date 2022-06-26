@@ -58,8 +58,14 @@ h1 {
   font-size: 7vw;
   margin-top: 0;
 }
+h2 {
+  font-size: 2em;
+}
 a {
-  color: #f00;
+  color: #6397b5;
+}
+p {
+  line-height: 1.5;
 }
 h2 ~ p  {
   font-size: 0.8em;
@@ -110,7 +116,7 @@ h2 ~ p  {
 .header-nav a {
   color: #fff;
 }
-  .nav-links a {
+.nav-links a {
   font-size: 0.8rem;
   font-weight: bold;
   text-decoration: none;
@@ -170,6 +176,17 @@ h2 ~ p  {
   padding-top: 10vh;
   background-size: cover;
 }
+.full-hero:after {
+  bottom: 2vh;
+  content: "";
+  color: #fff;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, 0);
+  width: 0;
+  border: 10px solid;
+  border-color: #fff transparent transparent;
+}
 .hero-home  {
   background-image: url(/images/shark.jpg);
   background-position: center top;
@@ -185,6 +202,7 @@ h2 ~ p  {
 .hero-content h1  {
   color: rgba(255, 255, 255, 0.8);
   font-size: 7vw;
+  margin-bottom: 0.25em;
 }
 .hero-content .social-link  {
   background-color: rgba(255, 255, 255, 0.8);
@@ -214,21 +232,39 @@ h2 ~ p  {
 }
 .social-list  {
   list-style: none;
-  text-align: left;
-  position: absolute;
+  text-align: center;
+  position: relative;
   bottom: 0px;
   padding-bottom: 10px;
 }
-
-/* .social-list a:hover  {
-  color: #ed6e2f;
-  background-color: rgb(187, 243, 215);
-} */
 .social-list > li {
   display: inline-block;
   margin: 0 0.5em;
 }
+/* HOMEPAGE STYLES */
+.home-section  {
+  width:90vw;
+  max-width: 980px;
+  margin: 6rem auto;
+}
+.home-section h2 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.home-callout {
+  background-color: #000;
+  color: #fff;
+  padding: 7vh 0;
+}
+.callout-title  {
+  font-size: 5.75vw;
+  text-align: right;
+  text-transform: uppercase;
+}
+.callout-copy {
+  font-size: 0.8rem;
 
+}
 /* BIO STYLES */
 .bio-wrapper {
   font-size: 24px;
@@ -238,36 +274,32 @@ h2 ~ p  {
   position: relative;
 }
 .bio-box {
-  border: 1px solid black;
   box-sizing: border-box;
   float: left;
   font-size: 1rem;
-  margin: 40px 1% 0;
-  padding: 2%;
-  width: 23%;
+  margin: 6rem 0 0;
+  padding: 0 3%;
+  width: 33%;
 }
 .bio-box a:hover  {
   color: #ed6e2f;
 }
 .bio-box h3 {
-  color: #fff;
+  color: rgb(56, 28, 28);
   font-size: 1.5em;
   margin: -40px 0 1em;
   text-align: center;
+  text-transform: uppercase;
 }
 .bio-box img {
   width: 100%;
 }
 .bio-box .social-link {
   display: block;
-  margin: 2em 0 1em;
+  margin: 2em auto 1em;
 }
 .bio-copy {
-  font-size: 1em;
-  line-height: 1.5;
-}
-.bio-copy a {
-  color: green;
+  font-size: 0.75em;
 }
 
 
