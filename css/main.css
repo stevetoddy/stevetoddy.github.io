@@ -53,6 +53,9 @@ html  {
 }
 body {
   font-family: Helvetica, Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 h1 {
   font-size: 7vw;
@@ -66,6 +69,7 @@ a {
 }
 p {
   line-height: 1.5;
+  margin: .75em 0;
 }
 h2 ~ p  {
   font-size: 0.8em;
@@ -73,6 +77,13 @@ h2 ~ p  {
   margin: 1em auto 0;
   max-width: 70%;
   text-align: center;
+}
+/* FLEX BOX STYLES */
+.content-container  {
+  flex-grow: 1;
+  background-color: #6397b5;
+  padding-top: 10vh;
+  width: 100%;
 }
 
 /* HEADER STYLES */
@@ -171,9 +182,8 @@ h2 ~ p  {
 /* HERO STYLES */
 .full-hero {
   background-color: #c7dbfc;
-  height: 100vh;
+  height: 90vh;
   box-sizing: border-box;
-  padding-top: 10vh;
   background-size: cover;
 }
 .full-hero:after {
@@ -252,18 +262,24 @@ h2 ~ p  {
   text-align: center;
 }
 .home-callout {
+  align-items: center;
   background-color: #000;
   color: #fff;
+  display: flex;
   padding: 7vh 0;
 }
 .callout-title  {
   font-size: 5.75vw;
   text-align: right;
   text-transform: uppercase;
+  flex-grow: 1;
+  flex-basis: 0;
 }
 .callout-copy {
-  font-size: 0.8rem;
-
+  font-size: 1rem;
+  flex-basis: 45em;
+  flex-shrink: 0;
+  padding: 0 3vw;
 }
 /* BIO STYLES */
 .bio-wrapper {
