@@ -80,7 +80,8 @@ h2 ~ p  {
 }
 /* FLEX BOX STYLES */
 .content-container  {
-  flex-grow: 1;
+  display: flex;
+  flex: 1 1 auto;
   background-color: #6397b5;
   padding-top: 10vh;
   width: 100%;
@@ -179,6 +180,31 @@ h2 ~ p  {
 .footer-social a:hover {
   color: #ed6e2f;
 }
+/* COLUMN STYLES */
+.col-three  { 
+  display: flex;
+  flex: 1;
+}
+.col {
+  box-sizing:border-box;
+  padding: 2em;
+}
+.gallery {
+
+}
+.col-three .col-nav {
+  flex: 0 1 15em;
+}
+.col-three .col-content {
+  flex: 1 1 0;
+  background-color: #ed6e2f;
+}
+.col .col-aside {
+  flex: 0 1 10em;
+}
+.col-three .col ~ .col {
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
 /* HERO STYLES */
 .full-hero {
   background-color: #c7dbfc;
@@ -262,23 +288,21 @@ h2 ~ p  {
   text-align: center;
 }
 .home-callout {
-  align-items: center;
   background-color: #000;
   color: #fff;
   display: flex;
+  align-items: center;
   padding: 7vh 0;
 }
 .callout-title  {
   font-size: 5.75vw;
   text-align: right;
   text-transform: uppercase;
-  flex-grow: 1;
-  flex-basis: 0;
+  flex: 1 1 0;
 }
 .callout-copy {
   font-size: 1rem;
-  flex-basis: 45em;
-  flex-shrink: 0;
+  flex: 0 0 45em;
   padding: 0 3vw;
 }
 /* BIO STYLES */
@@ -301,7 +325,7 @@ h2 ~ p  {
   color: #ed6e2f;
 }
 .bio-box h3 {
-  color: rgb(56, 28, 28);
+  color: rgb(255, 255, 255);
   font-size: 1.5em;
   margin: -40px 0 1em;
   text-align: center;
