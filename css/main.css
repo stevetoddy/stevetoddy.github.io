@@ -193,13 +193,13 @@ h2 ~ p  {
 
 }
 .col-three .col-nav {
-  flex: 0 1 15em;
+  flex: 0 1 20em;
 }
 .col-three .col-content {
   flex: 1 1 0;
   background-color: #ed6e2f;
 }
-.col .col-aside {
+.col-three .col-aside {
   flex: 0 1 10em;
 }
 .col-three .col ~ .col {
